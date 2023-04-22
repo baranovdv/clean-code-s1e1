@@ -6,21 +6,19 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="page">
-    <div class="header">
+    <header class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg">
       <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="main">
-      <div class="main-block block-add">
-        <p class="block-add__header" id="block-add__content">
-          <label class="block-add__label" for="new-task">Add Item</label>
+    </header>
+    <main class="main">
+      <section class="main-block block-add">
+          <h3 class="block-add__title title">Add Item</h3>
           <div class="block-add__content">
             <input id="new-task" class="block-add__input task" type="text">
             <button class="block-add__btn btn">Add</button>
           </div>
-        </p>
-      </div>
-      <div class="main-block block-todo">
+      </section>
+      <section class="main-block block-todo">
         <h3 class="block-todo__title title">Todo</h3>
         <ul class="block-todo__list list" id="block-todo__list">
           <li class="block-todo__item item">
@@ -42,8 +40,8 @@
             </button>
           </li>
         </ul>
-      </div>
-      <div class="main-block block-completed">
+      </section>
+      <section class="main-block block-completed">
         <h3 class="block-completed__title title">Completed</h3>
         <ul class="block-completed__list list" id="block-completed__list">
           <li class="block-completed__item item">
@@ -56,8 +54,8 @@
             </button>
           </li>
         </ul>
-      </div>
-    </div>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
