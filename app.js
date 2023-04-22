@@ -127,6 +127,7 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    listItem.className.split(' ').includes('item_edit-mode') ? listItem.className='block-completed__item item_edit-mode item' : listItem.className='block-completed__item item';
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -139,6 +140,7 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    listItem.className.split(' ').includes('item_edit-mode') ? listItem.className='block-todo__item item_edit-mode item' : listItem.className='block-todo__item item';
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
